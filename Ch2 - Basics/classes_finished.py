@@ -21,7 +21,7 @@ class Car(Vehicle):
 
     def drive(self, speed):
         super().drive(speed)
-        print("Driving my", self.engine, "Car at ", self.speed)
+        print(self.mode, self.engine, "Car at ", self.speed)
 
 
 class Motorcycle(Vehicle):
@@ -36,7 +36,7 @@ class Motorcycle(Vehicle):
 
     def drive(self, speed):
         super().drive(speed)
-        print("Driving my", self.engine, "motorcylce at ", self.speed)
+        print(self.mode, self.engine, "motorcylce at ", self.speed)
 
 
 car1 = Car("gas")
